@@ -52,18 +52,7 @@ Construir una plataforma donde:
 1. Cloná el repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/rolling-music.git
-   ```
-
-2. Instalá las dependencias:
-
-   ```bash
-   npm install
-   ```
-
-3. Iniciá la aplicación:
-   ```bash
-   npm start
+   git clone https://github.com/juanjonarese/rollingmusic.git
    ```
 
 ## 👨‍💻 Equipo de desarrollo
