@@ -1,11 +1,13 @@
 import React from "react";
-import FavSongScreen from "./pages/FavSongScreen";
+
 import AdminScreen from "./pages/AdminScreen";
+import HomeSreen from "./pages/HomeSreen";
 
 const App = () => {
   return (
     <>
-      <h1>Proyecto Rolling Music</h1>;{/* <FavSongScreen /> */}
+      <h1>Proyecto Rolling Music</h1>;
+      <HomeSreen />
       <AdminScreen />
     </>
   );

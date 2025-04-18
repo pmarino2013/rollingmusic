@@ -17,7 +17,7 @@ const TableSongApp = ({ songs, deleteSong, updateSong }) => {
       <table className="table table-striped">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">id</th>
             <th scope="col">Canción</th>
             <th scope="col">Artista</th>
             <th scope="col">Género</th>
@@ -25,7 +25,7 @@ const TableSongApp = ({ songs, deleteSong, updateSong }) => {
           </tr>
         </thead>
         <tbody>
-          {datosLocal.map((song) => (
+          {songs.map((song) => (
             <tr key={song.id}>
               <th scope="row">{song.id}</th>
               <td>{song.title}</td>

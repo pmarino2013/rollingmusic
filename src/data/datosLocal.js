@@ -25,11 +25,11 @@ export const datosLocal=[
 
     {
         id:3,
-        cancion :"London to BS As" ,
-        artista: "Hernan Cattaneo",
-        genero: "Electronica",
-        pista:"44db9t1Dj5UJrBp99RQgvg",
-        cover:"https://assets.beatportal.com/images/transforms/content-item/_1200x630_crop_center-center_none/London-To-Buenos-Aires_16x9.png",
+        cancion :"Bad Car" ,
+        artista: "Bob Marley",
+        genero: "Reggae",
+        pista:"2Zw5FtdFtvKWg4h44GOv3R",
+        cover:"https://pelagatos.com.ar/wp-content/uploads/2021/11/bob-marley-and-the-wailers-catch-a-fire.jpg",
         Favorito: "true"
     },
     

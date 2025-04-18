@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import { useState } from "react";
 
 const AddSongApp = (props) => {
   const { addSong } = props;
@@ -39,7 +40,7 @@ const AddSongApp = (props) => {
             <input
               type="text"
               className="form-control"
-              {...register("artist", { required: true })}
+              {...register("artista", { required: true })}
               placeholder="Ej: Pearl Jam"
             />
           </div>
@@ -48,12 +49,12 @@ const AddSongApp = (props) => {
             <label className="form-label fw-bold">Categoría</label>
             <select
               className="form-select"
-              {...register("category", { required: true })}
+              {...register("genero", { required: true })}
             >
               <option>Rock</option>
               <option>Pop</option>
               <option>Trap</option>
-              <option>Reggaetón</option>
+              <option>Reggae</option>
               <option>Otros</option>
             </select>
           </div>
