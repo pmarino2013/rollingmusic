@@ -24,10 +24,9 @@ const AdminScreen = () => {
   const deleteSong = (song) => {
     const cancionBorrar = songs.filter((songs) => songs.id !== song.id);
     MySwal.fire({
-      title: "Va a eliminar el producto: ${song.title}",
+      title: "Va a eliminar la cancion: ${song.title}",
       showDenyButton: true,
       confirmButtonText: "Si",
-      denyButtonText: No,
     }).then((result) => {
       if (result.isConfirmed) {
         setSongs(cancionBorrar);
@@ -61,7 +60,7 @@ const AdminScreen = () => {
     <>
       <h1>Administrador de canciones</h1>
 
-      <AddSongApp />
+      <AddSongApp addSong={addSong} />
 
       <TableSongApp
         songs={songs}

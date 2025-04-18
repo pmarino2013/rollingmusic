@@ -5,8 +5,7 @@ import AdminScreen from "./pages/AdminScreen";
 const App = () => {
   return (
     <>
-      <h1>Proyecto Rolling Music</h1>;
-      <FavSongScreen />
+      <h1>Proyecto Rolling Music</h1>;{/* <FavSongScreen /> */}
       <AdminScreen />
     </>
   );

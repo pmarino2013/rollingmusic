@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { datosLocal } from "../data/datosLocal";
 // import ModalUpdateApp from "./ModalUpdateApp";
 
 const TableSongApp = ({ songs, deleteSong, updateSong }) => {
@@ -24,7 +25,7 @@ const TableSongApp = ({ songs, deleteSong, updateSong }) => {
           </tr>
         </thead>
         <tbody>
-          {songs.map((song) => (
+          {datosLocal.map((song) => (
             <tr key={song.id}>
               <th scope="row">{song.id}</th>
               <td>{song.title}</td>
