@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { datosLocal } from "../data/datosLocal";
+import ModalUpdateApp from "../components/ModalUpdateApp";
+
 // import ModalUpdateApp from "./ModalUpdateApp";
 
 const TableSongApp = ({ songs, deleteSong, updateSong }) => {
@@ -28,7 +29,7 @@ const TableSongApp = ({ songs, deleteSong, updateSong }) => {
           {songs.map((song) => (
             <tr key={song.id}>
               <th scope="row">{song.id}</th>
-              <td>{song.title}</td>
+              <td>{song.tituloCancion}</td>
               <td>{song.artista}</td>
               <td>{song.genero}</td>
               <td>
@@ -52,14 +53,15 @@ const TableSongApp = ({ songs, deleteSong, updateSong }) => {
         </tbody>
       </table>
 
-      {/* {show && (
+      {show && (
         <ModalUpdateApp
           show={show}
           handleClose={handleClose}
           song={selectedSong}
           updateSong={updateSong}
+          somgs={songs}
         />
-      )} */}
+      )}
     </>
   );
 };

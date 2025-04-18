@@ -41,6 +41,24 @@ export const datosLocal=[
         pista:"7Jh1bpe76CNTCgdgAdBw4Z",
         cover:"https://cdn-images.dzcdn.net/images/cover/5fb91018679f65199308256be3c584ab/0x1900-000000-80-0-0.jpg",
         Favorito: "true"
+    },
+    {
+        id:5,
+        cancion :"Heroes" ,
+        artista: "David Bowie",
+        genero: "Rock",
+        pista:"7Jh1bpe76CNTCgdgAdBw4Z",
+        cover:"https://cdn-images.dzcdn.net/images/cover/5fb91018679f65199308256be3c584ab/0x1900-000000-80-0-0.jpg",
+        Favorito: "true"
+    },
+    {
+        id:6,
+        cancion :"Heroes" ,
+        artista: "David Bowie",
+        genero: "Rock",
+        pista:"7Jh1bpe76CNTCgdgAdBw4Z",
+        cover:"https://cdn-images.dzcdn.net/images/cover/5fb91018679f65199308256be3c584ab/0x1900-000000-80-0-0.jpg",
+        Favorito: "true"
     }
 ]
 

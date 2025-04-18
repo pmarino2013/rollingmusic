@@ -10,7 +10,7 @@ const AdminScreen = () => {
   useEffect(() => {
     const storedSongs = JSON.parse(localStorage.getItem("songs")) || [];
     setSongs(storedSongs);
-  }, []); /* verrrrrrr */
+  }, []); /* baja del localsorage el array si es que tiene algo sino lo inicia vacio*/
 
   // FUncion para subir tema
   const addSong = (datos) => {
@@ -24,7 +24,7 @@ const AdminScreen = () => {
   const deleteSong = (song) => {
     const cancionBorrar = songs.filter((songs) => songs.id !== song.id);
     MySwal.fire({
-      title: "Va a eliminar la cancion: ${song.title}",
+      title: `Esta seguro que quiere eliminar: ${song.title}`,
       showDenyButton: true,
       confirmButtonText: "Si",
     }).then((result) => {
@@ -61,7 +61,6 @@ const AdminScreen = () => {
       <h1>Administrador de canciones</h1>
 
       <AddSongApp addSong={addSong} />
-
       <TableSongApp
         songs={songs}
         deleteSong={deleteSong}

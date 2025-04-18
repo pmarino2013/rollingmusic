@@ -31,7 +31,7 @@ const AddSongApp = (props) => {
             <input
               type="text"
               className="form-control"
-              {...register("title", { required: true })}
+              {...register("tituloCancion", { required: true })}
               placeholder="Ej: Alive"
             />
           </div>
@@ -73,11 +73,10 @@ const AddSongApp = (props) => {
           <div className="col-md-6 mb-4">
             <label className="form-label fw-bold">Spotify (iframe embed)</label>
             <input
-              type="url"
+              type=""
               className="form-control"
               {...register("spotifyUrl", { required: true })}
               placeholder="7Jh1bpe76CNTCgdgAdBw4Z"
-              pattern="https://.*"
             />
           </div>
 
