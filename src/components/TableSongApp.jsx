@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ModalUpdateApp from "../components/ModalUpdateApp";
 
-// import ModalUpdateApp from "./ModalUpdateApp";
+
 
 const TableSongApp = ({ songs, deleteSong, updateSong }) => {
   const [selectedSong, setSelectedSong] = useState(null);
@@ -57,9 +57,8 @@ const TableSongApp = ({ songs, deleteSong, updateSong }) => {
         <ModalUpdateApp
           show={show}
           handleClose={handleClose}
-          song={selectedSong}
+          selectedSong={selectedSong}
           updateSong={updateSong}
-          somgs={songs}
         />
       )}
     </>

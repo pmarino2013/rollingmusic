@@ -15,8 +15,6 @@ const App = () => {
           <Route path="/admin" element={<AdminScreen />} />
         </Routes>
       </BrowserRouter>
-      {/* <HomeSreen /> */}
-      {/* <AdminScreen /> */}
     </>
   );
 };

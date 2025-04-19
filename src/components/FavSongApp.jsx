@@ -1,5 +1,5 @@
 import React from "react";
-import {} from "../data/datosLocal";
+// import {} from "../data/datosLocal";
 
 const CardSongApp = (props) => {
   const { cancion, artista, genero, cover, pista } = props.cancion;
