@@ -32,14 +32,15 @@ const SongApp = () => {
                   </p>
                   {cancion.spotifyUrl && (
                     <div className="mt-3">
-                      <iframe
+                      {/* <iframe
                         src={cancion.spotifyUrl}
                         width="100%"
                         height="80"
                         style={{ borderRadius: "8px" }}
                         allow="encrypted-media"
-                        title={`Spotify ${cancion.title}`}
-                      ></iframe>
+                        title={`Spotify ${cancion.title}`} verrr
+                      ></iframe> */}{" "}
+                      verrr
                     </div>
                   )}
                   <button className="btn btn-outline-danger btn-sm mt-3">
