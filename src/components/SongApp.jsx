@@ -7,7 +7,14 @@ const SongApp = () => {
   const { id } = bajarCancion;
   return (
     <>
-      <h2 className="mx-3">Prueba de Librería</h2>
+      <div className="col-md-6 mb-4 m-4">
+        <label className="form-label fw-bold">Banda / Artista</label>
+        <input
+          type="search"
+          className="form-control"
+          placeholder="Buscar cancion"
+        />
+      </div>
 
       <div className="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-2 mx-3 mb-5">
         {bajarCancion.map((cancion, index, id) => (
@@ -43,9 +50,6 @@ const SongApp = () => {
                       verrr
                     </div>
                   )}
-                  <button className="btn btn-outline-danger btn-sm mt-3">
-                    Escuchar
-                  </button>
                 </div>
               </div>
             </Link>

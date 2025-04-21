@@ -1,32 +1,40 @@
-import { useState } from "react";
-import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 // traeer los datos con props desde favsonapp
-function Example() {
-  const [smShow, setSmShow] = useState(false);
+function ModalListenApp({ smShow, handleClose, pista, cancion }) {
+  console.log(cancion);
 
   return (
     <>
-      <Button onClick={() => setSmShow(true)} className="me-2">
-        Small modal
-      </Button>
-
       <Modal
         size="sm"
         show={smShow}
-        onHide={() => setSmShow(false)}
+        onHide={handleClose}
         aria-labelledby="example-modal-sizes-title-sm"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-modal-sizes-title-sm">
-            Small Modal
-          </Modal.Title>
+          <Modal.Title id="example-modal-sizes-title-sm">{`Escucha: ${cancion}`}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>...</Modal.Body>
+        <Modal.Body>
+          <div>
+            {pista ? (
+              <>
+                <iframe
+                  src={`https://open.spotify.com/embed/track/${pista}?utm_source=generator`}
+                  width="100%"
+                  height="352"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
+              </>
+            ) : (
+              <p>No se encontró la pista</p>
+            )}
+          </div>
+        </Modal.Body>
       </Modal>
     </>
   );
 }
 
-export default Example;
+export default ModalListenApp;
