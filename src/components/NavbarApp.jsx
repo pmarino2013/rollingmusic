@@ -31,9 +31,7 @@ function NavbarApp() {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+            
           </Nav>
           <Form className="d-flex">
             <Form.Control
@@ -42,8 +40,8 @@ function NavbarApp() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-dark" style={{color:'#F87296' }}>Search </Button>
-            <Button variant="outline-pink" className='ms-2' style={{color:'#F87296'}}>Login </Button>
+            <Button variant="outline" style={{color:'#F87296' }}>Search </Button>
+            <Button variant="outline" className='ms-2' style={{color:'#F87296'}}>Login </Button>
           </Form>
         </Navbar.Collapse>
       </Container>
