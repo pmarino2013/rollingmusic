@@ -1,7 +1,13 @@
 import React from "react";
+import { FooterApp } from './pages/FooterApp'
 
 const App = () => {
-  return <h1>Proyecto Rolling Music</h1>;
+  return (
+<FooterApp/>
+
+  );
+
 };
 
 export default App;
+
