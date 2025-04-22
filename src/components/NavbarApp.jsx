@@ -42,7 +42,7 @@ function NavbarApp() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-danger">Search </Button>
+            <Button variant="outline-dark" style={{color:'#F87296' }}>Search </Button>
             <Button variant="outline-pink" className='ms-2' style={{color:'#F87296'}}>Login </Button>
           </Form>
         </Navbar.Collapse>
