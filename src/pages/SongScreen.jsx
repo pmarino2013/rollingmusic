@@ -9,7 +9,9 @@ const SongScreen = () => {
   useEffect(() => {
     const downsongs = JSON.parse(localStorage.getItem("songs")) || [];
     setSong(downsongs);
-    console.log(downsongs);
+    const buscarId = downsongs.find((datos) => String(datos.id) === id);
+
+    console.log(buscarId);
   }, []);
 
   return (
@@ -21,15 +23,23 @@ const SongScreen = () => {
             <div className="card mb-3">
               <div className="row g-0">
                 <div className="col-md-4">
-                  <img src="" className="img-fluid rounded-start" alt="..." />
+                  {/* <img
+                    src={
+                      song.image ||
+                      "https://via.placeholder.com/300x300?text=Sin+imagen"
+                    }
+                    className="img-fluid rounded-start"
+                    alt={song.tituloCancion || "Canción"}
+                  /> */}
                 </div>
                 <div className="col-md-8">
                   <div className="card-body">
-                    <h5 className="card-title"></h5>
+                    <h5 className="card-title">kbkbkb</h5>
                     <p className="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      {/* <strong>Artista:</strong> {song.artista} */}
+                    </p>
+                    <p className="card-text">
+                      {/* <strong>Género:</strong> {song.genero} */}
                     </p>
                     <p className="card-text">
                       <small className="text-body-secondary">

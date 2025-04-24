@@ -1,9 +1,8 @@
 import React from "react";
 import FavSongScreen from "./FavSongScreen";
-
 import SongApp from "../components/SongApp";
 
-const HomeSreen = () => {
+const HomeScreen = () => {
   return (
     <>
       <h2>Nuestros favoritos para vos</h2>
@@ -14,4 +13,4 @@ const HomeSreen = () => {
   );
 };
 
-export default HomeSreen;
+export default HomeScreen;
