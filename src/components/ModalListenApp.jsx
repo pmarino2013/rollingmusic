@@ -19,7 +19,6 @@ function ModalListenApp({ smShow, handleClose, pista, cancion }) {
           <div>
             {pista ? (
               <>
-               
                 <iframe
                   src={`https://open.spotify.com/embed/track/${pista}?utm_source=generator`}
                   width="100%"
@@ -29,7 +28,7 @@ function ModalListenApp({ smShow, handleClose, pista, cancion }) {
                 ></iframe>
               </>
             ) : (
-              <p>No se encontró la pista</p>
+              <p>cargando</p>
             )}
           </div>
         </Modal.Body>
