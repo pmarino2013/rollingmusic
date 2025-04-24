@@ -18,15 +18,13 @@ function ModalListenApp({ smShow, handleClose, pista, cancion }) {
         <Modal.Body>
           <div>
             {pista ? (
-              <>
-                <iframe
-                  src={`https://open.spotify.com/embed/track/${pista}?utm_source=generator`}
-                  width="100%"
-                  height="352"
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                  loading="lazy"
-                ></iframe>
-              </>
+              <iframe
+                src={pista}
+                width="100%"
+                height="352"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
             ) : (
               <p>cargando</p>
             )}
