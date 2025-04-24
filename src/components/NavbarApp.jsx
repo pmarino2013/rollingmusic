@@ -32,7 +32,7 @@ function NavbarApp() {
           </Nav>
           <Form className="d-flex">
                       
-             <FontAwesomeIcon icon={faUser} size="lg" color="#F87296" style={{ marginLeft: '10px', marginTop: '7px', marginRight:'10px'}} />
+             <FontAwesomeIcon icon={faUser} size="lg" color="#F87296" style={{ marginLeft: '10px', marginTop: '3px', marginRight:'10px'}} />
           </Form>
         </Navbar.Collapse>
       </Container>
