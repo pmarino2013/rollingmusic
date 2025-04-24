@@ -4,6 +4,10 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+
+
 
 function NavbarApp() {
   return (
@@ -41,7 +45,10 @@ function NavbarApp() {
               aria-label="Search"
             />
             <Button variant="outline" style={{color:'#F87296' }}>Search </Button>
-            <Button variant="outline" className='ms-2' style={{color:'#F87296'}}>Login </Button>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+  <FontAwesomeIcon icon={faUser} size="lg" color="#ff1493" />
+</div>
+
           </Form>
         </Navbar.Collapse>
       </Container>
