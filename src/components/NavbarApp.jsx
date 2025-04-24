@@ -24,31 +24,15 @@ function NavbarApp() {
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Admin</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#action2">Sobre nosotros</Nav.Link>
+            <Nav.Link href="#action3">Admin</Nav.Link>
+            <Nav.Link href="#action4">Planes</Nav.Link>
+            
             
           </Nav>
           <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline" style={{color:'#F87296' }}>Search </Button>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-  <FontAwesomeIcon icon={faUser} size="lg" color="#ff1493" />
-</div>
-
+                      
+             <FontAwesomeIcon icon={faUser} size="lg" color="#F87296" style={{ marginLeft: '10px', marginTop: '7px', marginRight:'10px'}} />
           </Form>
         </Navbar.Collapse>
       </Container>
