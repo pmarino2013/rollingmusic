@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 const App = () => {
-  return <h1>Proyecto Rolling Music</h1>;
-};
+  return <></>
+}
 
-export default App;
+export default App
