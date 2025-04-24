@@ -23,5 +23,9 @@ export const teamMembers = [
   {
     name: 'Facundo Cuellar',
     avatar: 'https://img.freepik.com/psd-premium/icone-3d-de-mulher-afro-negra-para-pessoas-de-avatar_431668-1271.jpg',
-   }
+   },
+   {
+    name: ' Luciano Sosa',
+    avatar: 'https://i.pinimg.com/originals/04/11/48/041148ae1567ae662b601a361c4f367a.png',
+    },
 ];
