@@ -40,11 +40,7 @@ const SongScreen = () => {
                     <p className="card-text">
                       <strong>Género:</strong> {song.genero}
                     </p>
-                    <p className="card-text">
-                      <small className="text-body-secondary">
-                        Última actualización reciente
-                      </small>
-                    </p>
+
                     {song.spotifyUrl && (
                       <a
                         href={`https://open.spotify.com/track/${song.spotifyUrl}`}

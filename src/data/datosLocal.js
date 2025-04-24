@@ -4,7 +4,7 @@ export const datosLocal=[
         cancion :" Alive" ,
         artista: "Pearl Jam",
         genero: "Rock",
-        pista:"https://open.spotify.com/embed/track/1L94M3KIu7QluZe63g64rv?utm_source=generator",
+        pista:"1L94M3KIu7QluZe63g64rv",
         cover:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxMvjP9Js5QGDgrmzuwxl1ngf7gurGgzFppkvcbt0ojauh7vEKbYPZ_ydeVF0zdXWYEqU&usqp=CAU",
         Favorito: "true"
         

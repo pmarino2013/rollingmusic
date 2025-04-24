@@ -19,9 +19,10 @@ function ModalListenApp({ smShow, handleClose, pista, cancion }) {
           <div>
             {pista ? (
               <iframe
-                src={pista}
+                src={`https://open.spotify.com/embed/track/${pista}?utm_source=generator `}
                 width="100%"
                 height="352"
+                allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
