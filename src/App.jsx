@@ -1,7 +1,17 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Planes from "./pages/Planes";
 
 const App = () => {
-  return <h1>Proyecto Rolling Music</h1>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/planes" element={<Planes />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
