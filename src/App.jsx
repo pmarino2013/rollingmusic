@@ -1,13 +1,14 @@
-
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeScreen from "./pages/HomeScreen";
 import SongScreen from "./pages/SongScreen";
 import AdminScreen from "./pages/AdminScreen";
+import NavbarApp from "./components/NavbarApp";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <NavbarApp />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/song/:id" element={<SongScreen />} />
@@ -17,7 +18,4 @@ const App = () => {
   );
 };
 
-
-
-
-export default App
+export default App;
