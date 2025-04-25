@@ -1,0 +1,34 @@
+.about-container {
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .team-quote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .team-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .team-member {
+    width: 150px;
+  }
+  
+  .avatar {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #424242;
+  }
+  
+  .member-name {
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
