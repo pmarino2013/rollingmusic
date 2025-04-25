@@ -4,6 +4,7 @@ import HomeScreen from "./pages/HomeScreen";
 import SongScreen from "./pages/SongScreen";
 import AdminScreen from "./pages/AdminScreen";
 import NavbarApp from "./components/NavbarApp";
+import FooterApp from "./components/FooterApp";
 
 const App = () => {
   return (
@@ -13,7 +14,9 @@ const App = () => {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/song/:id" element={<SongScreen />} />
         <Route path="/admin" element={<AdminScreen />} />
+        {/* <Route path="/admin" element={<AdminScreen />} /> */}
       </Routes>
+      <FooterApp />
     </BrowserRouter>
   );
 };
