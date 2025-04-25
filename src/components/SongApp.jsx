@@ -51,10 +51,7 @@ const SongApp = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">{cancion.tituloCancion}</h5>
-                  <p className="card-text">
-                     {cancion.artista}
-                  </p>
-                  
+                  <p className="card-text">{cancion.artista}</p>
                 </div>
               </div>
             </Link>
