@@ -3,13 +3,23 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Navbar, Container, Nav, Form } from "react-bootstrap";
+import "../css/NavbarStyle.css";
+import ModalLogin from "./ModalLogin";
 
 const NavbarApp = () => {
+const user = JSON.parse(localStorage.getItem("user") || "");
+
+  const [show, setShow] = React.useState(false);
+
+  const handleClose = () => setShow(false);
+
+  const handleShow = () => setShow(true);
   return (
-    <Navbar expand="lg" bg="dark" variant="dark">
+    <>
+    <Navbar id="navbar-cont" expand="lg" variant="dark">
       <Container fluid>
         <Navbar.Brand as={Link} to="/">
-          Rolling<span style={{ color: "#F87296" }}>Music</span>
+          <div id="logo"></div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -20,28 +30,32 @@ const NavbarApp = () => {
             <Nav.Link as={Link} to="/about">
               Sobre nosotros
             </Nav.Link>
-            <Nav.Link as={Link} to="/admin">
-              Admin
-            </Nav.Link>
+            {user.rol === "admin" ? (
+              <Nav.Link as={Link} to="/admin">
+                Admin
+              </Nav.Link>
+            )
+            : null}
             <Nav.Link as={Link} to="/planes">
               Planes
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
+            <div id="login-icon" className="d-flex align-items-center btn" onClick={handleShow}>
             <FontAwesomeIcon
               icon={faUser}
               size="lg"
-              color="#F87296"
-              style={{
-                marginLeft: "10px",
-                marginTop: "3px",
-                marginRight: "10px",
-              }}
-            />
+              color="#161616"
+            /><span>Iniciar sesión</span>
+            </div>
           </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    {show && (
+      <ModalLogin show={show} handleClose={handleClose} handleShow={handleShow}/>
+    )}
+    </>
   );
 };
 

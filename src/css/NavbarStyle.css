@@ -1,0 +1,32 @@
+#navbar-cont{
+    background-color: #161616;
+}
+
+#logo{
+    content: url('../assets/logo.png');
+    width: 128px;
+    &:hover{
+        scale: 1.1;
+    }
+    transition: all 0.25s ease;
+}
+
+#login-icon{
+    background-color: #F87296 ;
+    &:hover{
+        background-color: #DC2858;
+    }
+    transition: all 0.25s ease;
+    & span{
+        color: #161616;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+}
+
+button.navbar-toggler{
+    &:hover{
+        background-color: #DC2858;
+    }
+    transition: all 0.25s ease;
+}

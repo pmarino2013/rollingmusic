@@ -1,10 +1,13 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "../css/LoginStyle.css";
+import { Link } from "react-router-dom";
 import {datosUsuarios} from "../data/datosUsuarios.js";
 
-const LoginApp = () => {
-    // console.log(datosUsuarios);
+const LoginApp = (props) => {
+  const { handleClose } = props;
+
+  // localStorage.setItem("usuarios", JSON.stringify(datosUsuarios));
     const {
             register,
             handleSubmit,
@@ -13,11 +16,21 @@ const LoginApp = () => {
             formState: { errors },
         } = useForm()
 
-    const logIn = (datos) => {
-      localStorage.setItem("user", JSON.stringify(datos))
-      reset();
-      setFocus("email");
-    }
+      const logIn = (datos) => {
+        const user = datosUsuarios.find(
+          (usuario) => usuario.email === datos.email && usuario.password === datos.password
+        );
+      
+        if (user) {
+          localStorage.setItem("user", JSON.stringify(user));
+          reset();
+          setFocus("email");
+        } else {
+          alert("El usuario o la contraseña son incorrectos");
+          reset();
+          setFocus("email");
+        }
+      }
 
   return (
     <div className="container">
@@ -73,6 +86,7 @@ const LoginApp = () => {
                 <a
                   href="#"
                   className="text-decoration-none fw-bold enlace"
+                  as={Link} to="/register"
                 >
                   Registrate
                 </a>

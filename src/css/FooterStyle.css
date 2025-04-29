@@ -1,0 +1,21 @@
+#footer-cont{
+    background-color: #242424;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#logo-footer{
+    content: url('../assets/logo.png');
+    width: 180px;
+    &:hover{
+        scale: 1.1;
+    }
+    transition: all 0.25s ease;
+}
+
+#social-icons a i{
+    color: #F87296;
+}

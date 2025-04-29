@@ -5,10 +5,16 @@ import SongApp from "../components/SongApp";
 const HomeScreen = () => {
   return (
     <>
-      <h3>Nuestros favoritos para vos</h3>
-      <FavSongScreen />
-      <h3>Nuestra biblioteca para vos</h3>
-      <SongApp />
+      <div className="container mt-3">
+        <div className="row mb-4">
+          <h2>Nuestros favoritos para vos</h2>
+          <FavSongScreen />
+        </div>
+        <div className="row mb-4">
+          <h2>Nuestra biblioteca para vos</h2>
+          <SongApp />
+        </div>
+      </div>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "../css/jj.css";
+import "../css/pfpFavoritos.css";
 import ModalListenApp from "./ModalListenApp";
 
 const CardSongApp = (props) => {
