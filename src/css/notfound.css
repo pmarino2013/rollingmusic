@@ -1,4 +1,4 @@
-.container {
+.error-container {
     height: 100vh;
     background-color: #f8f8f8;
     display: flex;
@@ -10,13 +10,13 @@
     padding: 20px;
 }
 
-.image {
+.error-image {
     max-width: 100%;
     height: 300px;
     margin-bottom: 20px;
 }
 
-.title {
+.error-title {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 10px;

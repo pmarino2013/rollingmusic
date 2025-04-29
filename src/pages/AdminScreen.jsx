@@ -23,8 +23,9 @@ const AdminScreen = () => {
   // FUncion para eliminar tema
   const deleteSong = (song) => {
     const cancionBorrar = songs.filter((songs) => songs.id !== song.id);
+    console.log(song);
     MySwal.fire({
-      title: `Esta seguro que quiere eliminar: ${song.title}`,
+      title: `Esta seguro que quiere eliminar: ${song.tituloCancion}`,
       showDenyButton: true,
       confirmButtonText: "Si",
     }).then((result) => {
