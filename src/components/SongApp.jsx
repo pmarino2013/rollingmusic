@@ -57,7 +57,7 @@ const SongApp = () => {
                   className="card-img-top"
                   alt={cancion.tituloCancion}
                 />
-                <div className="card-body">
+                <div className="card-body ">
                   <h5 className="card-title">{cancion.tituloCancion}</h5>
                   <p className="card-text">{cancion.artista}</p>
                 </div>

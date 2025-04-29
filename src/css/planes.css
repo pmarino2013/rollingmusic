@@ -7,10 +7,6 @@
     --light-pink: #FEC8D6;
     --white: #FFFFFF;
   }
-  
-  .page-title {
-    color:var(--pink)
-  }
 
   .plan-card {
     border: 4px solid var(--light-gray);

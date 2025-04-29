@@ -14,7 +14,7 @@ const SongScreen = () => {
   if (!song) return <h3>Cargando canción...</h3>;
 
   return (
-    <div>
+    <div className="container-fluid mt-3">
       <h1>Tu canción seleccionada</h1>
       <div className="container">
         <div className="row">

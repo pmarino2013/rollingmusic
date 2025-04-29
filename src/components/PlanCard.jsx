@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/PlanStyle.css"
 
 const PlanCard = ({
   title,
@@ -50,7 +51,7 @@ const PlanCard = ({
       {/* Footer */}
       <div className="card-footer border-top-0">
         {/* color de boton */}
-        <button className="btn btn-outline-success w-100 fw-bold">
+        <button className="btn w-100 fw-bold button-plan">
           {button}
         </button>
         <p className="text-center text-body-secondary small mt-2 mb-0">

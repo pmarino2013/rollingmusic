@@ -52,16 +52,12 @@ const Planes = () => {
   return (
     <div className="planes-container">
 
-{/* navbar*/}
-
       <div className="container py-5">
-        {/* Encabezado*/}
         <div className="text-center mb-5">
           <h1 className="page-title">Planes de Suscripción</h1>
           <p className="page-subtitle">Elige el mejor plan para ti</p>
         </div>
         
-        {/* Grid de tarjetas */}
         <div className="row g-4">
           {plans.map((plan, index) => (
             <div key={index} className="col-lg-4 col-md-6">
@@ -70,7 +66,6 @@ const Planes = () => {
           ))}
         </div>
       </div>
-      {/* footer*/}
     </div>
   );
 };

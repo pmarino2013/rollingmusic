@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import {datosUsuarios} from "../data/datosUsuarios.js";
 
 const LoginApp = (props) => {
-  const { handleClose } = props;
 
   // localStorage.setItem("usuarios", JSON.stringify(datosUsuarios));
     const {
@@ -25,17 +24,18 @@ const LoginApp = (props) => {
           localStorage.setItem("user", JSON.stringify(user));
           reset();
           setFocus("email");
+          handleClose();
         } else {
-          alert("El usuario o la contraseña son incorrectos");
           reset();
           setFocus("email");
+          
         }
       }
 
   return (
     <div className="container">
       <div className="row justify-content-center">
-        <div className="col-md-8 col-lg-6">
+        <div className="col-md-8 col-lg-8">
           <div className="login-container">
             <div className="text-center mb-5">
               <h2 className="fw-bold mb-3">¡Bienvenido!</h2>
@@ -83,13 +83,7 @@ const LoginApp = (props) => {
 
               <div className="text-center mt-4">
                 <span className="text-muted">¿No tenés cuenta? </span>
-                <a
-                  href="#"
-                  className="text-decoration-none fw-bold enlace"
-                  as={Link} to="/register"
-                >
-                  Registrate
-                </a>
+                <Link className="text-decoration-none fw-bold enlace" to="*">Registrate</Link>
               </div>
             </form>
           </div>
