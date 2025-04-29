@@ -1,0 +1,8 @@
+.button-plan{
+    background-color: #DC2858;
+    color: white;
+    &:hover{
+        background-color: #F87296;
+        color: white;
+    }
+}

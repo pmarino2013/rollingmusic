@@ -28,6 +28,7 @@ const LoginApp = (props) => {
         } else {
           reset();
           setFocus("email");
+          
         }
       }
 
