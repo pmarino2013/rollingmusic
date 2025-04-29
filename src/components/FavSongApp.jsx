@@ -20,7 +20,7 @@ const CardSongApp = (props) => {
       <div className="container">
         <div className="row">
           <div className="col">
-            <div className="card h-100 p-2 border-none ">
+            <div className="h-100 p-2 border-none tarjeta-fav">
               <img
                 src={cover}
                 onClick={() => handleShow()}
