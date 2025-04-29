@@ -5,9 +5,9 @@ import SongApp from "../components/SongApp";
 const HomeScreen = () => {
   return (
     <>
-      <h2>Nuestros favoritos para vos</h2>
+      <h3>Nuestros favoritos para vos</h3>
       <FavSongScreen />
-      <h2>Nuestra biblioteca para vos</h2>
+      <h3>Nuestra biblioteca para vos</h3>
       <SongApp />
     </>
   );

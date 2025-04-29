@@ -12,9 +12,15 @@ const SongApp = () => {
     setCancionesFiltradas(canciones);
   }, []);
 
+  // buscador
+
   useEffect(() => {
-    const filtradas = bajarCancion.filter((cancion) =>
-      cancion.tituloCancion.toLowerCase().includes(inputValue.toLowerCase())
+    const filtradas = bajarCancion.filter(
+      (cancion) =>
+        cancion.tituloCancion
+          .toLowerCase()
+          .includes(inputValue.toLowerCase()) ||
+        cancion.artista.toLowerCase().includes(inputValue.toLowerCase())
     );
     setCancionesFiltradas(filtradas);
   }, [inputValue, bajarCancion]);
@@ -26,7 +32,9 @@ const SongApp = () => {
   return (
     <>
       <div className="col-12 col-md-6 mb-4 m-4">
-        <label className="form-label fw-bold">Banda / Artista</label>
+        <label className="form-label fw-bold">
+          Busca tu cancion o artista favorito
+        </label>
         <input
           type="search"
           className="form-control"
