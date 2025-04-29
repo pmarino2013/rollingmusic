@@ -1,0 +1,18 @@
+:root {
+    --black: #161616;
+    --dark-gray: #424242;
+    --light-gray: #AAAAAA;
+    --red: #DC2858;
+    --pink: #F87296;
+    --light-pink: #FEC8D6;
+    --white: #FFFFFF;
+  }
+  
+  .page-title {
+    color:var(--pink)
+  }
+
+  .plan-card {
+    border: 4px solid var(--light-gray);
+    border-radius: 10px;
+  }
