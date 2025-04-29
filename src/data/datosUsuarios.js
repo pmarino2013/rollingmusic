@@ -8,7 +8,7 @@ export const datosUsuarios = [
     {
         email: "user@user.com",
         password: "user123",
-        username: "user1",
+        username: "userUser",
         rol: "user",
     }
 ];
