@@ -1,0 +1,35 @@
+#footer-cont{
+    background-color: #242424;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#logo-footer{
+    margin-left: 20px;
+    content: url('../assets/logo.png');
+    width: 180px;
+    &:hover{
+        scale: 1.1;
+    }
+    transition: all 0.25s ease;
+}
+
+#social-icons i{
+    color: #F87296;
+    font-size: 20px;
+    &:hover{
+        color: #DC2858;
+    }
+}
+
+.enlace-footer{
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    &:hover{
+        color: #DC2858;
+    }
+}

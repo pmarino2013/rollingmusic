@@ -1,43 +1,62 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { Navbar, Container, Nav, Form } from "react-bootstrap";
+import "../css/NavbarStyle.css";
+import ModalLogin from "./ModalLogin";
 
+const NavbarApp = () => {
+const user = JSON.parse(localStorage.getItem("user") || "");
 
+  const [show, setShow] = React.useState(false);
 
-function NavbarApp() {
+  const handleClose = () => setShow(false);
+
+  const handleShow = () => setShow(true);
   return (
-    <Navbar expand="lg" bg="dark" variant='dark'>
-      <Container fluid >
-        <Navbar.Brand href="#">Rolling
-           <span style={{color: '#F87296'}}>Music</span>
-           </Navbar.Brand>
+    <>
+    <Navbar id="navbar-cont" expand="lg" variant="dark">
+      <Container fluid>
+        <Navbar.Brand as={Link} to="/">
+          <div id="logo"></div>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Sobre nosotros</Nav.Link>
-            <Nav.Link href="#action3">Admin</Nav.Link>
-            <Nav.Link href="#action4">Planes</Nav.Link>
-            
-            
+          <Nav className="me-auto my-2 my-lg-0" navbarScroll>
+            <Nav.Link as={Link} to="/">
+              Home
+            </Nav.Link>
+            <Nav.Link as={Link} to="/about">
+              Sobre nosotros
+            </Nav.Link>
+            {user.rol === "admin" ? (
+              <Nav.Link as={Link} to="/admin">
+                Admin
+              </Nav.Link>
+            )
+            : null}
+            <Nav.Link as={Link} to="/planes">
+              Planes
+            </Nav.Link>
           </Nav>
           <Form className="d-flex">
-                      
-             <FontAwesomeIcon icon={faUser} size="lg" color="#F87296" style={{ marginLeft: '10px', marginTop: '3px', marginRight:'10px'}} />
+            <div id="login-icon" className="d-flex align-items-center btn" onClick={handleShow}>
+            <FontAwesomeIcon
+              icon={faUser}
+              size="lg"
+              color="#161616"
+            /><span>Iniciar sesión</span>
+            </div>
           </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    {show && (
+      <ModalLogin show={show} handleClose={handleClose} handleShow={handleShow}/>
+    )}
+    </>
   );
-}
+};
 
 export default NavbarApp;

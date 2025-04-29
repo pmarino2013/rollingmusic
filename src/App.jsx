@@ -1,7 +1,17 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavbarApp from "./components/NavbarApp";
+import FooterApp from "./components/FooterApp";
+import PrincipalRoutes from "./routes/PrincipalRoutes"
 
 const App = () => {
-  return <></>
-}
+  return (
+    <BrowserRouter>
+      <NavbarApp />
+        <PrincipalRoutes/>
+      <FooterApp />
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
