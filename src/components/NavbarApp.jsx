@@ -7,7 +7,7 @@ import "../css/NavbarStyle.css";
 import ModalLogin from "./ModalLogin";
 
 const NavbarApp = () => {
-const user = JSON.parse(localStorage.getItem("user") || "");
+const user = JSON.parse(localStorage.getItem("user")) || null;
 
   const [show, setShow] = React.useState(false);
 
@@ -30,7 +30,7 @@ const user = JSON.parse(localStorage.getItem("user") || "");
             <Nav.Link as={Link} to="/about">
               Sobre nosotros
             </Nav.Link>
-            {user.rol === "admin" ? (
+            {user?.rol === "admin" ? (
               <Nav.Link as={Link} to="/admin">
                 Admin
               </Nav.Link>
